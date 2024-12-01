@@ -1,0 +1,2 @@
+# WorldleSolver
+Solves Worldle puzzle
