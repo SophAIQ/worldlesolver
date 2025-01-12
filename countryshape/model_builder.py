@@ -1,4 +1,4 @@
-%%writefile countryshape/model_builder.property
+%%writefile countryshape/model_builder.py
 """
 Contains PyTorch model code to instantiate a TinyVGG model
 """
