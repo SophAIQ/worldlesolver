@@ -1,5 +1,3 @@
-
-%%writefile countryshape/utils.py
 """
 Contains utilitiy functions for PyTorch model training and saving.
 """
