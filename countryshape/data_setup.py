@@ -1,4 +1,3 @@
-%%writefile countryshape/data_setup.py
 """
 Contains the functionality for creating PyTorch DataLoades for 
 Image classification data.
