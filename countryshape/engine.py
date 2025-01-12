@@ -1,4 +1,3 @@
-
 %%writefile countryshape/engine.property
 """
 Countains functions for training and testing a PyTorch model.
