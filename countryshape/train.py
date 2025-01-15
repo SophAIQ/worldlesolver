@@ -16,7 +16,7 @@ HIDDEN_UNITS = 10
 LEARNING_RATE = 0.001
 
 # Setup directories
-data_path = Path(r'C:\\Users\\johnd\\Documents\\School\\Graduate School\\Computer Science\\VSCode\\countryshape\\mapsicon-master\\all\\')
+data_path = Path(r'path to data')
 train_dir = data_path / "train"
 test_dir = data_path / "test"
 
