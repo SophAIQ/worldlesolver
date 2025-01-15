@@ -26,7 +26,7 @@ def type_in_word(word):
     return 0
 
 # Directory
-image_path = Path(r'C:\\Users\\johnd\\Documents\\School\\Graduate School\\Computer Science\\VSCode\\countryshape\\screenshots\\')
+image_path = Path(r'path to images')
 
 ### Create robot ###
 browser = webdriver.Firefox()
