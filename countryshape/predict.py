@@ -20,9 +20,9 @@ def predict64(image_name):
     device = "cuda" if torch.cuda.is_available() else "cpu"
 
     # Setup image directoy and train directory
-    # game_images_path = Path(r'C:\\Users\\johnd\\Documents\\School\\Graduate School\\Computer Science\\VSCode\\countryshape\\screenshots\\')
-    data_path = Path(r'C:\\Users\\johnd\\Documents\\School\\Graduate School\\Computer Science\\VSCode\\countryshape\\mapsicon-master\\all\\')
-    model_path = 'C:/Users/johnd/Documents/School/Graduate School/Computer Science/VSCode/countryshape/countryshape/models/'
+    # game_images_path = Path(r'path to images')
+    data_path = Path(r'path to data')
+    model_path = 'path to model'
     train_dir = data_path / "train"
 
     # Get path to import image
