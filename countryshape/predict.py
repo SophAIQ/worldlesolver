@@ -20,15 +20,16 @@ def predict64(image_name):
     device = "cuda" if torch.cuda.is_available() else "cpu"
 
     # Setup image directoy and train directory
-    game_images_path = Path(r'C:\\Users\\johnd\\Documents\\School\\Graduate School\\Computer Science\\VSCode\\countryshape\\screenshots\\')
+    # game_images_path = Path(r'C:\\Users\\johnd\\Documents\\School\\Graduate School\\Computer Science\\VSCode\\countryshape\\screenshots\\')
     data_path = Path(r'C:\\Users\\johnd\\Documents\\School\\Graduate School\\Computer Science\\VSCode\\countryshape\\mapsicon-master\\all\\')
+    model_path = 'C:/Users/johnd/Documents/School/Graduate School/Computer Science/VSCode/countryshape/countryshape/models/'
     train_dir = data_path / "train"
 
     # Get path to import image
-    todays = game_images_path / image_name
+    # todays = game_images_path / image_name
 
     # Read image
-    custom_image = torchvision.io.read_image(todays)
+    custom_image = torchvision.io.read_image(image_name)
 
     # Divide the image pixel values by 255 to get them between [0, 1]
     custom_image = (custom_image.float() / 255.0).repeat(3, 1, 1)
@@ -61,7 +62,7 @@ def predict64(image_name):
     ).to(device)
 
     # Load the saved state_dict into the model
-    model.load_state_dict(torch.load('models/Countryshape64_VGG_model.pth',weights_only=True))
+    model.load_state_dict(torch.load(model_path + 'Countryshape64_VGG_model.pth',weights_only=True))
 
     # Switch the model to evaluation mode
     model.eval()
@@ -82,7 +83,8 @@ def predict64(image_name):
     # Find the predicted label
     custom_image_pred_class = class_names[custom_image_pred_label.cpu()] # put pred label to CPU, otherwise will error
     # predicted_probability = custom_image_pred_probs[0, custom_image_pred_label].item()
-    print(custom_image_pred_class)
+    # print(custom_image_pred_class)
+    return custom_image_pred_class
 
     # # # top K probs
     # # topk_probs, topk_indices = torch.topk(custom_image_pred_probs, k=5, dim=1)
