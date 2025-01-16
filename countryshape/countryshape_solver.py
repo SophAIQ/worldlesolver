@@ -69,11 +69,12 @@ distance = browser.find_element(By.XPATH, '/html/body/div[1]/div[2]/div[2]/div/d
 print(distance)
 
 # Direction
-north = 
-ne = 
+direction = browser.find_element(By.XPATH, '/html/body/div[1]/div[2]/div[2]/div/div[2]/div/div[1]/div/div/div/div/div[2]/div[1]/div[3]/span/img')
+north = 'https://cdnjs.cloudflare.com/ajax/libs/twemoji/12.0.4/2/72x72/2b06.png'
+ne = 'https://cdnjs.cloudflare.com/ajax/libs/twemoji/12.0.4/2/72x72/2197.png'
 east = 'https://cdnjs.cloudflare.com/ajax/libs/twemoji/12.0.4/2/72x72/27a1.png'
 se = 'https://cdnjs.cloudflare.com/ajax/libs/twemoji/12.0.4/2/72x72/2198.png'
 south = 'https://cdnjs.cloudflare.com/ajax/libs/twemoji/12.0.4/2/72x72/2b07.png'
-sw = 
-west =
+sw = 'https://cdnjs.cloudflare.com/ajax/libs/twemoji/12.0.4/2/72x72/2199.png'
+west = 'https://cdnjs.cloudflare.com/ajax/libs/twemoji/12.0.4/2/72x72/2b05.png'
 nw = 'https://cdnjs.cloudflare.com/ajax/libs/twemoji/12.0.4/2/72x72/2196.png'
