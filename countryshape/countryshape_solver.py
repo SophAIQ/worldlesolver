@@ -26,7 +26,7 @@ def type_in_word(word):
     return 0
 
 # Directory
-image_path = Path(r'path to images')
+image_path = Path(r'C:\\Users\\johnd\\Documents\\School\\Graduate School\\Computer Science\\VSCode\\countryshape\\screenshots\\')
 
 ### Create robot ###
 browser = webdriver.Firefox()
@@ -60,4 +60,20 @@ play_button = browser.find_element(By.XPATH, '/html/body/div[1]/div[2]/div[2]/di
 interactable = browser.find_element(By.XPATH, '/html/body/div[1]/div[2]/div[2]/div/div[2]/div/div[1]/div/div/div/div/div[2]/form/div/div/input')
 type_in_word(prediction)
 time.sleep(5)
-browser.close()
+
+### See if answer is correct or not
+
+### If incorrect, gather feedback
+# Distance
+distance = browser.find_element(By.XPATH, '/html/body/div[1]/div[2]/div[2]/div/div[2]/div/div[1]/div/div/div/div/div[2]/div[1]/div[2]').text
+print(distance)
+
+# Direction
+north = 
+ne = 
+east = 'https://cdnjs.cloudflare.com/ajax/libs/twemoji/12.0.4/2/72x72/27a1.png'
+se = 'https://cdnjs.cloudflare.com/ajax/libs/twemoji/12.0.4/2/72x72/2198.png'
+south = 'https://cdnjs.cloudflare.com/ajax/libs/twemoji/12.0.4/2/72x72/2b07.png'
+sw = 
+west =
+nw = 'https://cdnjs.cloudflare.com/ajax/libs/twemoji/12.0.4/2/72x72/2196.png'
