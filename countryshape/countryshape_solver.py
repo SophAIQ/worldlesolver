@@ -80,3 +80,9 @@ print(direction.get_attribute('src'))
 # sw = 'https://cdnjs.cloudflare.com/ajax/libs/twemoji/12.0.4/2/72x72/2199.png'
 # west = 'https://cdnjs.cloudflare.com/ajax/libs/twemoji/12.0.4/2/72x72/2b05.png'
 # nw = 'https://cdnjs.cloudflare.com/ajax/libs/twemoji/12.0.4/2/72x72/2196.png'
+
+# import re
+
+# distance_int = int("".join(re.findall('[0-9]',distance)))
+# distance_int
+# direction_dict = {"N": "2b06","NE": "2197","E": "27a1","SE": "2198","S": "2b07","SW": "2199","W": "2b05","NW": "2196"}
